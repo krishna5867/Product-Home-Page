@@ -13,9 +13,15 @@ nav{
 }
 .nav-items{
     display: inline-flex;
+    margin-left: 300px;
 }
 nav img{
     margin-left: -10px;
+    width: 100px;
+}
+nav .icons{
+    width: 250px;
+    margin-left: 130px;
 }
 .nav-item {
     font-size: 20px;
@@ -36,7 +42,7 @@ nav img{
     margin: 30px 10px;
 }
 h3{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
 
 }
@@ -44,9 +50,10 @@ h3{
     width: 50px;
 }
 h1{
-    font-size: 73px;
+    font-size: 60px;
 
-}h5 img{
+}
+h5 img{
     background: orangered;
     border-radius: 50%;
     /* margin: 10px 20px; */
@@ -63,16 +70,23 @@ h1{
 }
 .sub-headline img{
     width: 30px;
+    margin-top: 10px;
 
+}
+span{
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
 }
 .text{
     margin-left: 10px;
-    margin-top: 40px;
-    line-height: 30px;
+    margin-top: 20px;
+    line-height: 20px;
     color: gray;
     width: 600px;
 }
 button{
+    margin-right: 30px;
     background-color: orangered;
     width: 170px;
     height: 50px;
@@ -94,10 +108,10 @@ button:hover{
     width: 130px;
     margin-top: 230px;
     margin-left: -540px;
-    position: absolute;
+    /* position: absolute; */
 }
 .right-section .headphone-div .discount-content{
-    position: absolute;
+    /* position: absolute; */
     margin-left: -505px;
     margin-top: 260px;
     width: 200px;
@@ -105,19 +119,38 @@ button:hover{
     color: #fff;
 
 }
-.discount-content h1{
-    font-size: 40px;
+.discount-content{
+    margin-top: -150px;
+    width: 300px;
+    height: 200px;
+    /* position: relative; */
+
 }
-.right-section .headphone-div img:last-child{
-    width: 450px;
-    margin-left: -500px;
-    margin-top: -30px;
+.discount-content .discount{
+    width: 100px;
+    margin-top: -10px;
+
+}
+.discount-content h1{
+    font-size: 30px;
+    margin-left: -90px;
+}
+.discount-content h4{
+    margin-left: -90px;
+}
+.right-section img{
+    width: 430px;
+}
+.dots-wrap{
+    display: inline-block;
+    margin-left: 980px;
+    margin-top: -120px;
+    position: absolute;
+    align-items: center;
 }
 .dots{
     display: flex;
-    margin-left: -330px;
-    position: absolute;
-
+    margin-bottom: 10px;
 }
 .dots .yellow-dot{
     position: absolute;
@@ -140,8 +173,49 @@ button:hover{
     background-color: black;
     margin-left: 20px;
 }
-.right-section .action-btn{
-    margin-left: -360px;
-    margin-top: 30px;
-    position: absolute;
+.dots-wrap .action-btn{
+    margin-left: -30px;
+}
+
+@media only screen and (max-width : 480px) {
+    nav img{
+        width: 150px;
+        margin-left: 30%;
+
+    }
+    .left-section h1,h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text{
+        margin-top: 40px;
+        font-size: 19px;
+        width: 400px;
+        flex-wrap: wrap;
+    }
+   
+    .nav-item{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .intro-section{
+        display: block;
+        flex-direction: column;
+    }
+    .right-section{
+        width: 430px;
+    }
+   
+    .action-btns{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .action-btn{
+        width: 100%;
+    }
+    .dots-wrap{
+        margin-left: 180px;
+    }
 }
