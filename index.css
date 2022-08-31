@@ -9,7 +9,8 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 10px 30px;
+    /* margin: 0px 30px; */
+    padding: 10px 50px;
 }
 .nav-items{
     display: inline-flex;
@@ -39,13 +40,14 @@ nav .icons{
 .intro-section{
     display: flex;
     justify-content: space-between;
-    margin: 30px 10px;
+    padding: 10px 30px;
 }
 h3{
     font-size: 30px;
     font-weight: 100;
 
 }
+
 .left-section img{
     width: 50px;
 }
@@ -143,8 +145,8 @@ button:hover{
 }
 .dots-wrap{
     /* display: inline-block; */
-    margin-left: 1120px;
-    margin-top: -110px;
+    margin-left: 960px;
+    margin-top: -90px;
     position: absolute;
     /* align-items: center; */
 }
@@ -178,8 +180,9 @@ button:hover{
 }
 .fa-solid{
     font-size: 33px;
-    padding: 10px 20px;
     opacity: 0;
+    padding: 10px 0px;
+
 
 }
 
@@ -189,8 +192,13 @@ button:hover{
         /* margin-left: 30%; */
 
     }
+    nav{
+    padding: 20px 40px;
+
+    }
     .fa-solid{
         opacity: 1;
+
     }
     .left-section h1,h3{
         /* border: 3px solid red; */
@@ -238,7 +246,8 @@ button:hover{
         width: 100%;
     }
     .action-btns{
-        padding: 0px 55px;
+        padding: 0px 50px;
+        width: 100%;
         margin-bottom: 110px;
 
     }
