@@ -142,11 +142,11 @@ button:hover{
     width: 430px;
 }
 .dots-wrap{
-    display: inline-block;
-    margin-left: 980px;
-    margin-top: -120px;
+    /* display: inline-block; */
+    margin-left: 1120px;
+    margin-top: -110px;
     position: absolute;
-    align-items: center;
+    /* align-items: center; */
 }
 .dots{
     display: flex;
@@ -176,16 +176,26 @@ button:hover{
 .dots-wrap .action-btn{
     margin-left: -30px;
 }
+.fa-solid{
+    font-size: 33px;
+    padding: 10px 20px;
+    opacity: 0;
 
-@media only screen and (max-width : 480px) {
+}
+
+@media(max-width: 560.78px) {
     nav img{
-        width: 150px;
-        margin-left: 30%;
+        width: 100px;
+        /* margin-left: 30%; */
 
     }
+    .fa-solid{
+        opacity: 1;
+    }
     .left-section h1,h3{
+        /* border: 3px solid red; */
         text-align: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .text{
         margin-top: 40px;
@@ -201,21 +211,39 @@ button:hover{
         display: none;
     }
     .intro-section{
-        display: block;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .left-section{
+        margin-top: -50px;
+
+    }
+    .left-section h1{
+        font-size: 42px;
+        margin: 10px 0px;
     }
     .right-section{
-        width: 430px;
+        margin: auto;
+
     }
-   
-    .action-btns{
-        display: flex;
-        margin-bottom: 30px;
+    .right-section img{
+        width:370px;
     }
-    .action-btn{
+    .sub-headlines{
+        margin: auto;
+        align-items: center;
+        margin-left: 30%;
+
+    }
+    .text{
         width: 100%;
     }
+    .action-btns{
+        padding: 0px 55px;
+        margin-bottom: 110px;
+
+    }
+    
     .dots-wrap{
-        margin-left: 180px;
+        margin-left: 200px;
     }
 }
